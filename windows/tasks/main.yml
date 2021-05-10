@@ -1,0 +1,9 @@
+- name: Ensure Windows username is present
+  fail:
+    msg: "Missing Windows Administrator username - please set WINDOWS_USER environment variable"
+  when: windows_user is not defined or not windows_user
+
+- name: Ensure Windows password is present
+  fail:
+    msg: "Missing Windows Administrator password - please set WINDOWS_PASSWORD environment variable"
+  when: windows_password is not defined or not windows_password

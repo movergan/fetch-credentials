@@ -1,0 +1,2 @@
+windows_user: "{{ lookup('env', 'WINDOWS_USER') }}"
+windows_password: "{{ lookup('env', 'WINDOWS_PASSWORD') }}"
